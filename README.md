@@ -4,7 +4,7 @@ This is a detection system consisting of two parts:
   - A logistic regression model built from scratch
   - A neural network model built using tensorflow
 
-The dataset has over 5172 mails and 1000+ features comprising of different words commonly present in most mails.
+The dataset has over 5172 mails and 3000 features comprising of different words commonly present in most mails.
 
 Both the models are designed to perform spam mail detection using a spam mail identifier dataset.
 
