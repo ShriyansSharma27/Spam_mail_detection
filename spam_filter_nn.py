@@ -8,7 +8,7 @@ from data_proc import train_x, train_y
 
 # The 4-Layered Neural Network
 model = tf.keras.Sequential([
-    tf.keras.layers.Input(shape=(197,), dtype=np.float64),
+    tf.keras.layers.Input(shape=(408,), dtype=np.float64),
     tf.keras.layers.Dropout(0.2),
     tf.keras.layers.Dense(128, kernel_regularizer = tf.keras.regularizers.l2(0.001), activation='relu'),
     tf.keras.layers.Dropout(0.2),

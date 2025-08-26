@@ -48,7 +48,7 @@ corr = repeated_words['rep_words'].corr(df['Prediction'].astype(int))
 #most used words of spam mails
 spam_mail_words = []
 
-chi2_selector = SelectKBest(chi2, k = 300)
+chi2_selector = SelectKBest(chi2, k = 1000) #k value can be altered
 X_kbest = chi2_selector.fit_transform(bag_words, df['Prediction'])
 top_spam_words = bag_words.columns[chi2_selector.get_support()]
 
