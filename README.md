@@ -23,7 +23,7 @@ The dataset: https://www.kaggle.com/datasets/balaka18/email-spam-classification-
   - It makes use of L2/ridge regularization method to avoid overfitting
   - The accuracy of the model is ~88.6%
 
-  <img width="1037" height="550" alt="image" src="https://github.com/user-attachments/assets/ffd6b00e-d58c-4213-896f-697fcf3b2477" />
+  <img width="550" height="292" alt="image" src="https://github.com/user-attachments/assets/ffd6b00e-d58c-4213-896f-697fcf3b2477" />
 
 
   <img width="1000" height="539" alt="image" src="https://github.com/user-attachments/assets/395cc469-8d6f-4805-a1a6-b2271cfe2147" />
