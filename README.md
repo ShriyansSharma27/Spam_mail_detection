@@ -65,7 +65,7 @@ The dataset: https://www.kaggle.com/datasets/balaka18/email-spam-classification-
   - The user is required to only use the test_mail.py and mail.txt file to test both models
   - K value of the chi2_selector in data_proc.py may be changed:
     - Increasing would increase training time but improve performance
-    - Decreasing would decrease performance but decrease training time
+    - Decreasing would decrease performance but improve training time
 
 # Author
 
