@@ -61,7 +61,7 @@ The dataset: https://www.kaggle.com/datasets/balaka18/email-spam-classification-
   - It is recommended that all the dependencies are downloaded for the project to be used properly
   - The logistic regression model may be time consuming since it does not use NumPy vectorization
   - Several commented print statements are provided to observe the performance of the two models
-  - Content of mail.txt model can be modified to test the two models
+  - Content of mail.txt can be modified to test the two models
   - The user is required to only use the test_mail.py and mail.txt file to test both models
   - K value of the chi2_selector in data_proc.py may be changed:
     - Increasing would increase training time but improve performance
