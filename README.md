@@ -30,7 +30,7 @@ The dataset: https://www.kaggle.com/datasets/balaka18/email-spam-classification-
 
 ## Neural network model
   - The model consists of 4 Dense Layers
-  - It uses of extra features such as Regularization, Early Stopping and Adam optimizer for improving accuracy
+  - It uses features such as Regularization, Early Stopping and Adam optimizer for improving accuracy
   - The accuracy of the model is ~95.5%
 
   <img width="550" height="292" alt="image" src="https://github.com/user-attachments/assets/93242a66-0030-4254-83d2-1f1c2ad01b80" />
