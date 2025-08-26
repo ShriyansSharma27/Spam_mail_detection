@@ -21,22 +21,24 @@ The dataset: https://www.kaggle.com/datasets/balaka18/email-spam-classification-
 
   - The model is built from scratch using modified formulas derived from linear regression, and gradient descent
   - It uses L2/ridge regularization method to avoid overfitting
-  - The accuracy of the model is ~88.6%
+  - The accuracy of the model is ~93.3%
 
-  <img width="550" height="292" alt="image" src="https://github.com/user-attachments/assets/ffd6b00e-d58c-4213-896f-697fcf3b2477" />
+  <img width="550" height="292" alt="image" src="https://github.com/user-attachments/assets/ef91e68f-b7df-4a76-94ab-1ceaa25701d5" />
 
 
-  <img width="550" height="292" alt="image" src="https://github.com/user-attachments/assets/395cc469-8d6f-4805-a1a6-b2271cfe2147" />
+  <img width="550" height="292" alt="image" src="https://github.com/user-attachments/assets/dbcb7aef-e16e-431c-a907-89b386fa75ef" />
+
 
 ## Neural network model
   - The model consists of 4 Dense Layers
   - It uses features such as Regularization, Early Stopping and Adam optimizer for improving accuracy
-  - The accuracy of the model is ~95.5%
+  - The accuracy of the model is ~96.4%
 
-  <img width="550" height="292" alt="image" src="https://github.com/user-attachments/assets/93242a66-0030-4254-83d2-1f1c2ad01b80" />
+  <img width="550" height="292" alt="image" src="https://github.com/user-attachments/assets/ca0b4c28-3c08-45b6-9b2b-7f4648e03d72" />
+  
 
+  <img width="550" height="292" alt="image" src="https://github.com/user-attachments/assets/1c646355-1e6e-4de9-9805-974636e5de04" />
 
-  <img width="550" height="292" alt="image" src="https://github.com/user-attachments/assets/35cab908-1cb1-4129-8454-9f277250abef" />
 
 # Files
   - emails.csv: dataset file
@@ -61,6 +63,9 @@ The dataset: https://www.kaggle.com/datasets/balaka18/email-spam-classification-
   - Several commented print statements are provided to observe the performance of the two models
   - Content of mail.txt model can be modified to test the two models
   - The user is required to only use the test_mail.py and mail.txt file to test both models
+  - K value of the chi2 selector may be changed:
+    - Increasing would increase training time but improve performance
+    - Decreasing would decrease performance but also decrease training time
 
 # Author
 
