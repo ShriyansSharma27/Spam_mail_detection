@@ -26,17 +26,17 @@ The dataset: https://www.kaggle.com/datasets/balaka18/email-spam-classification-
   <img width="550" height="292" alt="image" src="https://github.com/user-attachments/assets/ffd6b00e-d58c-4213-896f-697fcf3b2477" />
 
 
-  <img width="1000" height="539" alt="image" src="https://github.com/user-attachments/assets/395cc469-8d6f-4805-a1a6-b2271cfe2147" />
+  <img width="550" height="292" alt="image" src="https://github.com/user-attachments/assets/395cc469-8d6f-4805-a1a6-b2271cfe2147" />
 
 ## Neural network model
   - The model consists of 4 Dense Layers
   - It makes use of extra features such as Regularization, Early Stopping and Adam optimizer for improving accuracy
   - The accuracy of the model is ~95.5%
 
-  <img width="1023" height="541" alt="image" src="https://github.com/user-attachments/assets/93242a66-0030-4254-83d2-1f1c2ad01b80" />
+  <img width="550" height="292" alt="image" src="https://github.com/user-attachments/assets/93242a66-0030-4254-83d2-1f1c2ad01b80" />
 
 
-  <img width="1019" height="540" alt="image" src="https://github.com/user-attachments/assets/35cab908-1cb1-4129-8454-9f277250abef" />
+  <img width="550" height="292" alt="image" src="https://github.com/user-attachments/assets/35cab908-1cb1-4129-8454-9f277250abef" />
 
 
 # Dependencies
