@@ -38,6 +38,13 @@ The dataset: https://www.kaggle.com/datasets/balaka18/email-spam-classification-
 
   <img width="550" height="292" alt="image" src="https://github.com/user-attachments/assets/35cab908-1cb1-4129-8454-9f277250abef" />
 
+# Files
+  - emails.csv: dataset file
+  - mail.txt: user can modify contents to test the two models
+  - data_proc.py: data processing of the dataset
+  - spam_filter_lr.py: logistic regression model
+  - spam_filter_nn.py: neural network model
+  - test_mail.py: to test the two models using mail.txt
 
 # Dependencies
   - NumPy
@@ -53,6 +60,7 @@ The dataset: https://www.kaggle.com/datasets/balaka18/email-spam-classification-
   - The logistic regression model may be time consuming since it does not use NumPy vectorization
   - Several commented print statements are provided to observe the performance of the two models
   - Content of mail.txt model can be modified to test the two models
+  - The user is required to only use the test_mail.py and mail.txt file to observe performance of both models
 
 # Author
 
