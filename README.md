@@ -58,7 +58,7 @@ The dataset: https://www.kaggle.com/datasets/balaka18/email-spam-classification-
 
 # Usage
 
-  - It is recommended that all the dependencies are downloaded for the project to be used properly
+  - Run pip install -r requirements.txt to install all dependencies required to run the code
   - The logistic regression model may be time consuming since it does not use NumPy vectorization
   - Several commented print statements are provided to observe the performance of the two models
   - Content of mail.txt can be modified to test the two models
