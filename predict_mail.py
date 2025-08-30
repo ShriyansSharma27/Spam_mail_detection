@@ -3,8 +3,10 @@ import pandas as pd
 from data_proc import *
 from spam_filter_lr import *
 from spam_filter_nn import * 
+from pathlib import Path
 
-file_path="mail.txt" #contents of the text file can be altered to test 
+BASE_DIR = Path(__file__).parent
+file_path= BASE_DIR / 'mail.txt'  #contents of the text file can be altered to test 
 cols = df.columns
 words = []
 count_words = {}
