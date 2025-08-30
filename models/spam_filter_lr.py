@@ -4,7 +4,7 @@ import numpy as np
 import math
 from sklearn.metrics import accuracy_score, confusion_matrix, f1_score
 from string import ascii_lowercase
-from data_proc import train_x, train_y
+from src.data_proc import train_x, train_y
 
 # Visualisation 
 cost_function = []

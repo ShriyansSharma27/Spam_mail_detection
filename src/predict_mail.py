@@ -1,8 +1,8 @@
 import re
 import pandas as pd
-from data_proc import *
-from spam_filter_lr import *
-from spam_filter_nn import * 
+from src.data_proc import *
+from models.spam_filter_lr import *
+from models.spam_filter_nn import * 
 
 file_path="mail.txt" #contents of the text file can be altered to test 
 cols = df.columns
