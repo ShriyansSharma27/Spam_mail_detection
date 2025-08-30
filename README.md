@@ -66,6 +66,11 @@ The dataset: https://www.kaggle.com/datasets/balaka18/email-spam-classification-
   - K value of the chi2_selector in data_proc.py may be changed:
     - Increasing would increase training time but improve performance
     - Decreasing would decrease performance but improve training time
+   
+# Limitations
+
+  This model was trained on a specific dataset, which does not include all words commonly found in spam emails. 
+  Consequently, predictions may be inaccurate for emails containing vocabulary not represented in the training data.
 
 # Author
 
