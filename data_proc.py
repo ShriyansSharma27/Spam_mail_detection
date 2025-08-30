@@ -5,13 +5,15 @@ from sklearn.feature_selection import chi2
 from sklearn.feature_selection import SelectKBest
 from sklearn.preprocessing import StandardScaler
 from string import ascii_lowercase
+from pathlib import Path
 
 from warnings import simplefilter
 simplefilter(action="ignore", category=pd.errors.PerformanceWarning)
 scaler = StandardScaler()
 
 # Data extraction
-emails_data = pd.read_csv('emails.csv')
+BASE_DIR = Path(__file__).parent
+emails_data = pd.read_csv(BASE_DIR / 'emails.csv')
 df = pd.DataFrame(data=emails_data)
 df = df.dropna()
 
