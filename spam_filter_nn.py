@@ -4,7 +4,7 @@ import tensorflow as tf
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.metrics import f1_score, accuracy_score, confusion_matrix
-from src.data_proc import train_x, train_y
+from data_proc import train_x, train_y
 
 # The 4-Layered Neural Network
 model = tf.keras.Sequential([
