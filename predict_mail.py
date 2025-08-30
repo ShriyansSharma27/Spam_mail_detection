@@ -4,7 +4,7 @@ from data_proc import *
 from spam_filter_lr import *
 from spam_filter_nn import * 
 
-file_path="mail.txt" #contents of the text file can be altered to test 
+file_path="./testing_data/mail.txt" #contents of the text file can be altered to test 
 cols = df.columns
 words = []
 count_words = {}

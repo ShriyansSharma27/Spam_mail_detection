@@ -11,7 +11,7 @@ simplefilter(action="ignore", category=pd.errors.PerformanceWarning)
 scaler = StandardScaler()
 
 # Data extraction
-emails_data = pd.read_csv('emails.csv')
+emails_data = pd.read_csv('./training_data/emails.csv')
 df = pd.DataFrame(data=emails_data)
 df = df.dropna()
 
