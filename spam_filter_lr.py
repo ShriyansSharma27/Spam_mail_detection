@@ -36,7 +36,10 @@ for e in range(epochs):
             z += (weights[j] * train_x[i][j])
         z += b
 
-        f_wb_i = 1 / (1 + np.exp(-z)) # f_wb function
+        # clamping
+        f_wb_i = 1 / (1 + np.exp(-z))
+        eps = 1e-15
+        f_wb_i = min(max(f_wb_i, eps), 1 - eps)
         loss_i = - (train_y[i] * math.log(f_wb_i)) - ( (1 - train_y[i]) * math.log(1 - f_wb_i))  #loss function 
         j_wb += loss_i
 
@@ -45,10 +48,11 @@ for e in range(epochs):
         for j in range(len(dj_dw)):
             dj_dw[j] += (dw_db * train_x[i][j])
         
-        preds.append((f_wb_i >= 0.4).astype(int))
+        preds.append(int(f_wb_i >= 0.4))
         actuals.append(train_y[i])
 
     j_wb /= sample_size
+    j_wb += (lambda_val/(2*sample_size)) * sum(w*w for w in weights)
     #print("Cost: ", j_wb)
 
     cost_function.append(j_wb)

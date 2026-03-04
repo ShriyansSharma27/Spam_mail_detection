@@ -3,8 +3,16 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 import tensorflow as tf 
 import numpy as np
 import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
 from sklearn.metrics import f1_score, accuracy_score, confusion_matrix
 from data_proc import train_x, train_y
+
+X_train, X_test, Y_train, Y_test = train_test_split(
+    train_x, train_y,
+    test_size=0.30,
+    random_state=42,
+    stratify=train_y 
+)
 
 # The 4-Layered Neural Network
 model = tf.keras.Sequential([
@@ -26,20 +34,19 @@ earlyStopping = tf.keras.callbacks.EarlyStopping(
 
 model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
 
-hist = model.fit(train_x, train_y, epochs=50, validation_split=0.3, callbacks=[earlyStopping])
+hist = model.fit(X_train, Y_train, epochs=50, validation_data=(X_test, Y_test), callbacks=[earlyStopping])
 
 # Model performance markers
-y_pred = model.predict(train_x)
+y_pred = model.predict(X_test)
 y_pred = (y_pred >= 0.5).astype(int).flatten()
 
-cfm = confusion_matrix(y_pred, train_y)
+cfm = confusion_matrix(Y_test, y_pred)
 #print("Neural network model confusion matrix: \n", cfm)
 
-acc = accuracy_score(train_y, y_pred)
+acc = accuracy_score(Y_test, y_pred)
 #print("Neural network accuracy score: ", acc)
-f1 = f1_score(train_y, y_pred, average='weighted')
+f1 = f1_score(Y_test, y_pred, average='weighted')
 #print("Neural network f1 score: ", f1)
-
 
 # Visualisation of model performance
 
